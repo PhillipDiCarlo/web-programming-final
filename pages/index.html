@@ -1,0 +1,184 @@
+<div class="row" id="ioo49">
+  <div class="cell" id="igexd">
+    <div data-gjs="navbar" class="navbar" id="iqlm">
+      <div class="navbar-container" id="iavi">
+        <div id="iqol" class="navbar-burger">
+          <div class="navbar-burger-line">
+          </div>
+          <div class="navbar-burger-line">
+          </div>
+          <div class="navbar-burger-line">
+          </div>
+        </div>
+        <div data-gjs="navbar-items" class="navbar-items-c">
+          <nav data-gjs="navbar-menu" class="navbar-menu" id="idug">
+            <a href="index.html" class="navbar-menu-link" id="ilqhs">Home</a>
+            <a href="#" class="navbar-menu-link" id="i634h">Home</a>
+            <a href="#" class="navbar-menu-link" id="inze5">Home</a>
+            <a href="about.html" class="navbar-menu-link">About</a>
+            <a href="contact.html" class="navbar-menu-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" id="ief9z">
+  <div class="cell" id="i7s5h">
+    <div id="itk9n">
+      <b>HOME
+      </b>
+    </div>
+    <div id="ipqb1">Welcome to the site
+      <div>Please use the navigation menu above to move around the site
+      </div>
+    </div>
+  </div>
+</div>
+<script>var items = document.querySelectorAll('#iqol');
+  for (var i = 0, len = items.length; i < len; i++) {
+    (function(){
+      var e,t=0,n=function(){
+        var e,t=document.createElement("void"),n={
+          transition:"transitionend",OTransition:"oTransitionEnd",MozTransition:"transitionend",WebkitTransition:"webkitTransitionEnd"};
+        for(e in n)if(void 0!==t.style[e])return n[e]}
+      (),r=function(e){
+        var t=window.getComputedStyle(e),n=t.display,r=(t.position,t.visibility,t.height,parseInt(t["max-height"]));
+        if("none"!==n&&"0"!==r)return e.offsetHeight;
+        e.style.height="auto",e.style.display="block",e.style.position="absolute",e.style.visibility="hidden";
+        var i=e.offsetHeight;
+        return e.style.height="",e.style.display="",e.style.position="",e.style.visibility="",i}
+      ,i=function(e){
+        t=1;
+        var n=r(e),i=e.style;
+        i.display="block",i.transition="max-height 0.25s ease-in-out",i.overflowY="hidden",""==i["max-height"]&&(i["max-height"]=0),0==parseInt(i["max-height"])?(i["max-height"]="0",setTimeout(function(){
+          i["max-height"]=n+"px"}
+,10)):i["max-height"]="0"}
+      ,a=function(r){
+        if(r.preventDefault(),!t){
+          var a=this.closest("[data-gjs=navbar]"),o=a.querySelector("[data-gjs=navbar-items]");
+          i(o),e||(o.addEventListener(n,function(){
+            t=0;
+            var e=o.style;
+            0==parseInt(e["max-height"])&&(e.display="",e["max-height"]="")}
+                                     ),e=1)}
+      };
+      "gjs-collapse"in this||this.addEventListener("click",a),this["gjs-collapse"]=1
+    }
+     .bind(items[i]))();
+  }
+</script>
+<style>* {
+  box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+  .row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .navbar-burger-line{
+    padding:1px;
+    background-color:white;
+    margin:5px 0;
+  }
+  .navbar-burger{
+    margin:10px 0;
+    width:45px;
+    padding:5px 10px;
+    display:none;
+    float:right;
+    cursor:pointer;
+  }
+  .navbar-menu-link{
+    margin:0;
+    color:inherit;
+    text-decoration:none;
+    display:inline-block;
+    padding:10px 15px;
+  }
+  .navbar-menu{
+    padding:10px 0;
+    display:block;
+    float:right;
+    margin:0;
+  }
+  .navbar-container::after{
+    content:"";
+    clear:both;
+    display:block;
+  }
+  .navbar-container{
+    max-width:950px;
+    margin:0 auto;
+    width:95%;
+  }
+  .navbar{
+    background-color:#222;
+    color:#ddd;
+    min-height:50px;
+    width:100%;
+  }
+  .navbar-items-c{
+    display:inline-block;
+    float:right;
+  }
+  #iqlm{
+    display:flex;
+    position:fixed;
+  }
+  #iavi{
+    display:flex;
+    justify-content:center;
+  }
+  #idug{
+    align-items:center;
+    justify-content:space-between;
+  }
+  #igexd{
+    display:flex;
+  }
+  #ioo49{
+    height:73px;
+  }
+  #ief9z{
+    height:875px;
+  }
+  #itk9n{
+    padding:10px;
+    display:block;
+    text-align:center;
+    font-size:30px;
+  }
+  #ipqb1{
+    padding:10px;
+    text-align:center;
+  }
+  @media (max-width: 768px){
+    .navbar-menu-link{
+      display:block;
+    }
+    .navbar-menu{
+      width:100%;
+    }
+    .row{
+      flex-wrap:wrap;
+    }
+    .navbar-items-c{
+      display:none;
+      width:100%;
+    }
+    .navbar-burger{
+      display:block;
+    }
+  }
+</style>
